@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Multi Vendor Marketplace{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    {% include 'includes/navbar.html' %}
+    
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+
+    {% include 'includes/footer.html' %}
+</body>
+</html>
